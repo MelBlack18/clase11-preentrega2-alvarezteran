@@ -219,3 +219,10 @@ formulario.onsubmit = (e) => {
 
     convertir(datosBase.unidadInicial, datosBase.unidadDestino, datosBase.cantidadInicial)
 }
+
+let borrarHistorial = document.getElementById("borrarHistorial")
+
+borrarHistorial.onclick = (e) => {
+    localStorage.clear()
+    location.reload()
+}
